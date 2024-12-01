@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Донеси на коллегу!</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="img/logo.png" alt="Логотип компании">
+            <h1>Донос</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Сообщи об ошибке коллеги</h2>
+            <p class="subtitle">Донос абсолютно анонимен!</p>
+            <form id="reportForm">
+                <div class="input-group">
+                    <label for="fullName">ФИО доносящего:</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Введите ваше ФИО">
+                </div>
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Введите ваш email">
+                </div>
+                <div class="input-group">
+                    <label for="report">Напишите ваш донос:</label>
+                    <textarea id="report" name="report" placeholder="Введите текст доноса"></textarea>
+                </div>
+                <div class="buttons">
+                    <button type="button" id="rulesButton">Правила использования</button>
+                    <button type="submit">Отправить</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Модальное окно -->
+    <div id="rulesModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Правила использования</h3>
+            <li>За донос сотрудник получает баллы, которые можно обменять на бесплатную игру в лазертаг и/или аксессуары из внутреннего 
+                магазина LaserLand.</li><br>
+            <li>За успешный донос, повлекший взыскание или увольнение коллеги, сотрудник получает абонемент на безлимитные игры 
+                лазертаг на месяц в любом из центров LaserLand</li><br>
+            <li>За раскрытие личности доносчика, сотрудник, на которого был составлен донос, имеет право на получение 10 игр с 
+                доносившим на него сотрудником. Исключением являются сотрудники, уволенные вследствие доноса.</li><br>
+            <li>За 10 успешных доносов сотрудник получает лимитированный мерч LaserLand</li><br>
+            <li></li><br>
+            <li></li><br>
+
+            <p><strong>Все вышеперечисленные пункты не являются истиной, не несут никакого 
+                логического смысла и не имеют практического применения, 
+                т.к. сайт является шуткой на 01.04.2025 (первое апреля две тысячи двадцать пятого года).</strong></p>
+        </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
